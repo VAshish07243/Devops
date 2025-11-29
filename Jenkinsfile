@@ -20,7 +20,7 @@ pipeline{
         stage("Run App"){
             steps{
                 bat '''
-                python app.py
+                python python-program-pollscm/app.py
                 '''
             }
         }
