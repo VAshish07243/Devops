@@ -33,7 +33,7 @@ pipeline{
             echo "Build Failed"
         }
         always{
-            archiveArtifacts artifacts: 'artifact.txt, out/**', allowEmptyArchive: false 
+            archiveArtifacts artifacts: 'artifact.txt, out/**', allowEmptyArchive: true 
         }
     }
 }
